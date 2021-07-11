@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access-Control-Allow-Origin:' Vidacha nalichnih v bankomate'</title>
+
+    <link rel="stylesheet" href="./assets/bootstrap-5-css/bootstrap.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js"></script>
+</head>
+<body>
+
+    <div class='row row-cols-sm row-cols-1 my-5 g-0'>
+        <div class="form-group d-flex flex-row py-1">
+                <label class="w-50" for="SumInput" >Введите сумму</label>
+                <input
+
+                 oninput="calc()"
+                 type="text" 
+                 class="form-control" 
+                 id="SumInput" 
+                 
+                 min='1000'
+                 max="1000000000"
+                 step="1"
+                 required
+                
+                  
+                 
+                >
+                </input>
+
+                
+
+
+        </div>
+
+        <div class="sum-annuitet-res pe-2">
+            <p  id="resOutput" class="my-3 text-black fw-bold text-center">Результат вывода </p>
+        </div>
+    
+</body>
+</html>

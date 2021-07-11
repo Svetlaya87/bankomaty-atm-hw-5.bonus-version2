@@ -1,0 +1,125 @@
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-width: 540px;
+    font-size: 30px;
+}
+
+.btn, .form-control {
+    font-size: 1.5rem;
+}
+
+
+h1, h3 {
+    font-size: calc(1.9rem + 1.5vw);
+    
+}
+
+p {font-size: calc(0.5rem + 1.5vw);
+}
+
+
+input:invalid {
+    border-color: rgba(255, 0, 200, 0.603);
+  }
+
+  input:valid {
+    border-color: rgba(2, 197, 44, 0.76);
+}  
+
+/*
+#numberPeriodResult {
+    max-width: 40px;
+
+}
+
+#annuitSumResult, #paymentBodySumInMonthResult{
+    max-width: 150px;
+
+}
+
+#sumPersentResult {
+    max-width: 120px;
+
+}
+
+#saldoBodySumResult {
+    max-width: 100px;
+
+}*/
+
+.grid-results {
+    max-width: 690px;
+
+    display: grid;
+    grid-template-rows: 15% 1fr 10%;
+    grid-template-columns: 60px repeat(4,1fr);
+    grid-gap: 10px;
+    row-gap: 15px;
+    grid-template-areas: 
+
+    'number-res         sum-annuitet-res body-credit-res             sum-percent-res saldo-body-res'
+
+    'numberPeriodResult annuitSumResult  paymentBodySumInMonthResult sumPersentResult saldoBodySumResult'
+
+    '. sum-overpay-res sum-overpay-res overpaySumResult .';
+
+    justify-content: flex-end;
+}
+    /*название табицы*/
+    .number-res {
+        grid-area: number-res;
+    }
+
+    .sum-annuitet-res {
+        grid-area: sum-annuitet-res;
+    }
+
+    .body-credit-res{
+        grid-area: body-credit-res;
+    }
+
+    .sum-percent-res{
+        grid-area: sum-percent-res;
+    }
+
+    .saldo-body-res {
+        grid-area:  saldo-body-res;
+    }
+
+
+    /*значения таблицы*/
+    .numberPeriodResult{
+        grid-area: numberPeriodResult;
+    }
+
+
+    .annuitSumResult{
+        grid-area: annuitSumResult;
+        
+    }
+
+    .paymentBodySumInMonthResult{
+        grid-area: paymentBodySumInMonthResult;
+    }
+
+    .sumPersentResult{
+        grid-area: sumPersentResult;
+    }
+
+    .saldoBodySumResult {
+        grid-area: saldoBodySumResult;
+    }
+    
+    /*результаты*/
+    .sum-overpay-res {
+        grid-area: sum-overpay-res;
+        
+    }
+
+    .overpaySumResult{
+        grid-area: overpaySumResult;
+        
+    }
